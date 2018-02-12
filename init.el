@@ -1,4 +1,4 @@
-;; -*- lexical-binding: t -*-
+;;; purcell's init.el  -*- lexical-binding: t -*-
 (setq debug-on-error t)
 
 ;;; This file bootstraps the configuration, which is divided into
