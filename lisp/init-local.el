@@ -6,7 +6,9 @@
 ;; (setq user-full-name "Th. Rikl"
 ;;       user-mail-address "trikl@online.de")
 
-(global-flycheck-mo)
+;; ((global-set-key (kbd) "<f9>" . undo-tree-undo)  ; `s'(=super)is for left `windows-key'
+;;  ("<f10>"  . undo-tree-redo)))
+
 ;; Personal Key Bindings
 ;; Mit der Ende/Home-Taste ans Datei-Ende/Anfang (default: Zeilenende)
 (global-set-key (kbd "<end>") 'end-of-buffer)
@@ -16,6 +18,9 @@
 (global-unset-key (kbd "M-}"))   ; mit < { } > ist abgeschafft!
 (global-unset-key (kbd "M-x"))   ; bound to <menu> and helm-M-x
 (global-unset-key (kbd "C-x f")) ; disable "set fill-column" later on it is set to find-file
+
+(global-set-key (kbd "<f9>") 'undo-tree-undo)
+(global-set-key (kbd "<f10>") 'undo-tree-redo)
 
 (global-set-key (kbd "<f11>") 'next-error)
 (global-set-key (kbd "<S-f11>") 'previous-error)
