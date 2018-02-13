@@ -16,8 +16,11 @@
 (global-unset-key (kbd "C-M-v")) ; scroll-other-window only whith <M-next> resp <M-prior>
 (global-unset-key (kbd "M-{"))   ; Absatzweise vorwärts/rückwärts springen
 (global-unset-key (kbd "M-}"))   ; mit < { } > ist abgeschafft!
-(global-unset-key (kbd "M-x"))   ; bound to <menu> and helm-M-x
+;; (global-unset-key (kbd "M-x"))  ; bound to <menu> and helm-M-x
 (global-unset-key (kbd "C-x f")) ; disable "set fill-column" later on it is set to find-file
+
+(global-set-key (kbd "<f5>") 'apropos)
+(global-set-key (kbd "<f6>") 'describe-key)
 
 (global-set-key (kbd "<f9>") 'undo-tree-undo)
 (global-set-key (kbd "<f10>") 'undo-tree-redo)
@@ -42,6 +45,7 @@
 ;; to 'describe-...' usually called with C-h f,v,k etc.
 ;;
 
+(global-flycheck-mode nil)
 
 (provide 'init-local)
 ;;; init-local ends here
